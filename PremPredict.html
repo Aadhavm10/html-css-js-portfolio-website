@@ -12,20 +12,18 @@
             <a href="index.html#projects" class="back-button">← Back to Projects</a>
         </div>
 
-        <div class="project-header">
+        
+    <div class="top-link">
+        <a href="https://premscout.netlify.app/" target="_blank">Visit PremScout</a>
+    </div>
+    <div class="project-header">
+    
             <h1 class="project-title">Fantasy Premier League Points Predictor</h1>
             <p class="project-subtitle">
                 Machine learning-based system that predicts player performance in Fantasy Premier League using historical data and current form.
             </p>
         </div>
 
-        <div class="project-section">
-            <h2 class="section-title">PREMSCOUT Demo</h2>
-            <video controls width="640" height="360">
-                <source src="./assets/PREMSCOUT Demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
 
         <div class="project-section">
             <h2 class="section-title">Technologies Used</h2>
@@ -49,13 +47,29 @@
         </div>
 
         <div class="button-container">
-            <button class="btn btn-color-2" onclick="location.href='https://github.com/Aadhavm10'">
+            <button class="btn btn-color-2" onclick="location.href='https://github.com/Aadhavm10/PremScout-main'">
                 View on GitHub
             </button>
-            <button class="btn btn-color-1" onclick="location.href='https://github.com/Aadhavm10'">
+            <button class="btn btn-color-1" onclick="location.href='https://premscout.netlify.app/'">
                 Live Demo
             </button>
         </div>
     </div>
+
+    <div class="project-section">
+        <h2 class="section-title">How It Works</h2>
+        <p class="explanation">
+            This FPL (Fantasy Premier League) predictor script is designed to predict the performance of players for an
+            upcoming gameweek using historical data and machine learning techniques. Here's a breakdown of its functionality:
+        </p>
+        <ul class="feature-list">
+            <li><strong>Dataset Handling:</strong> Uses player statistics, fixture difficulties, and upcoming fixtures from Kaggle.</li>
+            <li><strong>Fixture Analysis:</strong> Identifies upcoming gameweek fixtures and evaluates opponent difficulty.</li>
+            <li><strong>Player Data Preparation:</strong> Includes features like cost, form, goals, assists, and fixture difficulty adjustments.</li>
+            <li><strong>Machine Learning Model:</strong> A Random Forest Regressor predicts player performance based on attributes and fixtures.</li>
+            <li><strong>Predictions:</strong> Outputs a CSV file ranking players by predicted points, considering playing chances and opponent difficulty.</li>
+        </ul>
+    </div>
+
 </body>
 </html>

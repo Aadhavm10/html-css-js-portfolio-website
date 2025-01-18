@@ -544,6 +544,24 @@ section {
     margin-top: 2rem;
 }
 
+.project-section {
+  margin: 0 auto; /* Center the section */
+  padding: 2rem 1rem; /* Add padding for spacing */
+  max-width: 800px; /* Set a maximum width for better readability */
+}
+
+.explanation {
+  margin-bottom: 1.5rem;
+  text-align: justify; /* Optional: Align text for better appearance */
+}
+
+.feature-list {
+  margin-left: 1.5rem; /* Add left margin for list indentation */
+  padding: 0 1rem; /* Add horizontal padding */
+  line-height: 1.8; /* Improve line spacing for better readability */
+}
+
+
 /* CONTACT */
 
 #contact {
@@ -593,4 +611,25 @@ footer {
 
 footer p {
   text-align: center;
+}
+.top-link {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.top-link a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.top-link a:hover {
+    text-decoration: underline;
+}
+
+.explanation {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
