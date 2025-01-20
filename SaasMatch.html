@@ -18,16 +18,75 @@
             <p class="project-subtitle">Intelligent SaaS Platform Matching Solution</p>
         </div>
 
-        <img src="./assets/project-1.png" alt="Saas Match Screenshot" class="project-image">
+        
 
         <div class="project-section">
             <h2 class="section-title">Project Overview</h2>
-            <p>
+            <p class="explanation">
                 Saas Match is an innovative platform designed to connect SaaS companies with potential 
                 customers through intelligent matching algorithms. The platform analyzes business needs, 
                 budget constraints, and feature requirements to recommend the most suitable SaaS solutions, 
                 streamlining the software selection process for businesses.
             </p>
+        </div>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="./assets/SaasMatchSlides/slide1.png" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="./assets/SaasMatchSlides/slide2.png" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="./assets/SaasMatchSlides/slide3.png" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="./assets/SaasMatchSlides/slide4.png" alt="Slide 4">
+            </div>
+            <div class="slide">
+                <img src="./assets/SaasMatchSlides/slide5.png" alt="Slide 5">
+            </div>
+            <div class="slide">
+                <img src="./assets/SaasMatchSlides/slide6.png" alt="Slide 6">
+            </div>
+            <div class="slide">
+                <img src="./assets/SaasMatchSlides/slide7.png" alt="Slide 7">
+            </div>
+            <div class="slide">
+                <img src="./assets/SaasMatchSlides/slide8.png" alt="Slide 8">
+            </div>
+            <div class="slide">
+                <img src="./assets/SaasMatchSlides/slide9.png" alt="Slide 9">
+            </div>
+            <div class="slide">
+                <img src="./assets/SaasMatchSlides/slide10.png" alt="Slide 10">
+            </div>
+            <div class="slide">
+                <img src="./assets/SaasMatchSlides/slide11.png" alt="Slide 11">
+            </div>
+            <div class="slide">
+                <img src="./assets/SaasMatchSlides/slide12.png" alt="Slide 12">
+            </div>
+
+            <button class="prev" onclick="changeSlide(-1)">❮</button>
+            <button class="next" onclick="changeSlide(1)">❯</button>
+        </div>
+
+        <div class="dots">
+            <!-- Update number of dots to match number of slides -->
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
         </div>
 
         <div class="project-section">
@@ -56,7 +115,7 @@
 
         <div class="project-section">
             <h2 class="section-title">Development Process</h2>
-            <p>
+            <p class="explanation">
                 The development of Saas Match focused on creating an intuitive platform that simplifies 
                 the SaaS selection process. The matching algorithm was developed using machine learning 
                 techniques to understand and analyze business requirements, while the real-time 
@@ -67,9 +126,41 @@
 
         <div class="button-container">
             <button class="btn btn-color-2" onclick="location.href='https://github.com/Aadhavm10'">
-                Live Demo
+                GitHub
             </button>
         </div>
     </div>
+
+    <!-- Add JavaScript for slideshow functionality -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
 </body>
 </html>

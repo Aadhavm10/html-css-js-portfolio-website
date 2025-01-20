@@ -102,4 +102,36 @@
       text-align: justify;
     }
   }
+
+  /* Media Queries for Responsive Design */
+@media screen and (max-width: 600px) {
+  .contact-info-upper-container {
+    flex-direction: row;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .contact-info-container {
+    margin: 0.5rem;
+    min-width: 0;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  #contact {
+    height: auto;
+    min-height: 70vh;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact-info-container p {
+    font-size: medium;
+  }
+  
+  .email-icon {
+    height: 2rem;
+  }
+}
   
