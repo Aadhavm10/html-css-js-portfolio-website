@@ -442,6 +442,8 @@ article .icon {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
+  display: block; /* Add this line */
+  margin: 0 auto; /* Add this line */
 }
 
 .project-title {
