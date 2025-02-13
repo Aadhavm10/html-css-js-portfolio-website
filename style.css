@@ -301,12 +301,13 @@ section {
 }
 
 .details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: black;
-  border-radius: 2rem;
-  border: rgb(200, 200, 200) 0.1rem solid;
-  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
 }
 
 .section-container {
@@ -340,13 +341,24 @@ section {
   margin-bottom: 3rem;
 }
 
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: black;
+  border-radius: 2rem;
+  border: rgb(200, 200, 200) 0.1rem solid;
+  text-align: center;  /* Ensures all content is centered */
+}
+
 .experience-sub-title {
   color: rgb(200, 200, 200);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 1rem;
   position: relative;
-  display: inline-block;
+  display: block;  /* Changed from inline-block to block */
+  text-align: center;  /* Centers the text */
+  width: 100%;  /* Takes full width of container */
 }
 
 .experience-sub-title::after {
@@ -359,6 +371,14 @@ section {
   height: 3px;
   background-color: rgb(200, 200, 200);
   border-radius: 2px;
+}
+
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;  /* Increased margin to add space below title */
+  text-align: left;  /* Keeps the content items left-aligned */
 }
 
 .experience-details-container {
@@ -442,8 +462,8 @@ article .icon {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
-  display: block; /* Add this line */
-  margin: 0 auto; /* Add this line */
+  display: block;
+  margin: 0 auto;
 }
 
 .project-title {
