@@ -137,6 +137,8 @@
   
 /* Responsive styling for mobile screens */
 @media (max-width: 768px) {
+  
+  
 
   /* Ensure images/videos fit uniformly within this container */
   .about-pic-container {
@@ -173,3 +175,4 @@
     padding-bottom: 2rem;
   }
 }
+
