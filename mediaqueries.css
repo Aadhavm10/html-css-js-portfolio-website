@@ -135,3 +135,41 @@
   }
 }
   
+/* Responsive styling for mobile screens */
+@media (max-width: 768px) {
+
+  /* Ensure images/videos fit uniformly within this container */
+  .about-pic-container {
+    width: 90%;
+    max-width: 300px; /* Keeps it from getting too large */
+    height: 250px; /* Set fixed height to ensure consistency */
+    overflow: hidden; /* Prevents media from spilling out */
+    margin: 0 auto 1rem; /* Adds margin below for spacing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* for positioning click-instruction if needed */
+  }
+
+  /* Ensuring each image/video fits properly */
+  .about-pic-container img,
+  .about-pic-container video {
+    width: 100%; /* Take up entire container width */
+    height: 100%; /* Take up entire container height */
+    object-fit: cover; /* prevents distortion */
+    border-radius: 1rem; /* optional, maintains styling */
+  }
+
+  /* Arrange content vertically */
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  #about {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+}
