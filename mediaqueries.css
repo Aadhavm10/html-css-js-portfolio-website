@@ -105,23 +105,39 @@
 
   /* Media Queries for Responsive Design */
 @media screen and (max-width: 600px) {
+
+  #contact, footer {
+    height: 40vh;
+  }
+  
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  
+  article {
+    font-size: 1rem;
+  }
+  
+  /* And so on with your existing rules */
+  
+  /* Add these fixes for the contact section */
   .contact-info-upper-container {
-    flex-direction: row;
+    flex-direction: column; /* Change to column to avoid skewing */
     padding: 1rem;
     gap: 0.5rem;
+    align-items: center; /* Center items horizontally */
   }
 
   .contact-info-container {
     margin: 0.5rem;
-    min-width: 0;
-    width: 100%;
-    justify-content: flex-start;
+    width: 90%; /* Control width */
+    justify-content: center; /* Center content */
   }
-
-  #contact {
-    height: auto;
-    min-height: 70vh;
-    padding: 1rem;
+  
+  /* Ensure consistent margins for all sections */
+  section {
+    margin: 0 5%;
   }
 }
 
@@ -162,14 +178,13 @@
     border-radius: 1rem; /* optional, maintains styling */
   }
 
-  /* Arrange content vertically */
   .section-container {
     flex-direction: column;
     align-items: center;
     margin: 0;
     padding: 0 1rem;
   }
-
+  
   #about {
     height: auto;
     padding-bottom: 2rem;
