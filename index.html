@@ -37,7 +37,7 @@
       </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
+      <div class="section__pic-container profile-pic-container">
         <img src="./assets/profile-pic.png" alt="Aadhav Manimurugan profile picture" />
       </div>
       <div class="section__text">
@@ -75,12 +75,13 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
+        <div class="section__pic-container about-pic-container" id="about-media-container" onclick="cycleAboutMedia()" style="cursor: pointer;">
+          <img 
+            id="about-pic" 
+            src="./assets/ProfilePics/about-pic.png" 
+            alt="About Me picture" 
           />
+          <div class="click-instruction">Click to go through</div>
         </div>
         <div class="about-details-container">
           <div class="about-containers">

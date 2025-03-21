@@ -172,7 +172,7 @@ section {
   height: 80vh;
 }
 
-.section__pic-container {
+#profile .section__pic-container {
   display: flex;
   height: 400px;
   width: 400px;
@@ -289,8 +289,12 @@ section {
   display: flex;
 }
 
-.about-pic {
+.about-pic-container img,
+.about-pic-container video {
+  width: 400px; /* original size or adjust as needed */
+  height: auto;
   border-radius: 2rem;
+  object-fit: cover;
 }
 
 .arrow {
@@ -317,12 +321,24 @@ section {
 }
 
 .section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+  width: 450px; /* Match the image width */
+  height: auto; /* Adjust height as needed */
+  margin: 0 auto; /* Center the container */
 }
 
-/* EXPERIENCE SECTION */
+.click-instruction {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  pointer-events: none; /* Allow click-through to the underlying media */
+  user-select: none;
+}
 /* EXPERIENCE SECTION */
 
 #experience {
